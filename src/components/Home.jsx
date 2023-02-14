@@ -1,13 +1,13 @@
 import React from 'react';
 import Login from './Login';
+import "../styles/Home.css"
 const Home = () => {
   return (
     <div className='whole'>
-        <div>
-            <h1>Expense <br /> Tracker</h1>
+        <div className='logo'>
+            <h1>Expense<br/> <span> Tracker</span></h1>
         </div>
       <Login />
-     <h4>C</h4>
     </div>
   );
 };
