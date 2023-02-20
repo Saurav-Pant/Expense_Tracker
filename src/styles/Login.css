@@ -4,21 +4,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30vw;
-    height: 45vh;
+    width: 28vw;
+    height: 50vh;
     background-image: linear-gradient(to right, hsl(246, 94%, 67%), hsl(265, 94%, 67%));
-    border-radius: 20px;
+    border-radius: 30px;
     margin: auto;
-    margin-top: 10rem;
+    margin-top: 12rem;
 }
-.Login{
-    position: relative;
-    bottom: 2rem;
-}
+
 .Login_text{
     color: white;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.Login_text_2{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
 }
 
 .byuser{
@@ -27,9 +33,12 @@
     border-radius: 20px;
     padding: 5px;
     margin: 5px 0px;
+    margin-bottom: 13px;
     width: 19vw;
-    height: 1.8vw;
+    height: 2rem;
+    background-color: hsl(248, 30%, 95%);
 }
+
 .SignIn{
     border-radius: 15px;
     border: none;
@@ -37,10 +46,9 @@
     margin-top: 10px;
     cursor: pointer;
     width: 8vw;
-    background-color: #03C988;
+    background-image: linear-gradient(to right bottom, hsl(150, 62%, 65%), hsl(176, 68%, 64%));
     color: white;
-    font-weight: 900;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .btn{
@@ -49,3 +57,26 @@
     justify-content: center;
     
 }
+.btns{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btns>button{
+    border: none;
+    outline: none;
+    border-radius: 50px; 
+    font-size: 15px;
+    padding: 10px 13px;
+    margin: 5px 5px;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+
+.btns>button:hover{
+    background-image: linear-gradient(to right bottom, hsl(150, 62%, 65%), hsl(176, 68%, 64%));
+    color: white;
+}
+
