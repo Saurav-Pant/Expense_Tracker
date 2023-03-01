@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 import "../styles/AddExpense.css";
 import Create from "../components/Create";
+import { useNavigate } from "react-router-dom";
 
 const AddExpense = () => {
+  const navigate=useNavigate();
   const [showForm, setShowForm] = useState(false);
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
@@ -17,7 +18,12 @@ const AddExpense = () => {
 
   const handleSaveClick = (event) => {
     // handle saving the data here
-    setShowForm(false);
+    setShowForm(true); // update showForm state to true
+  };
+
+  const buttonClick = (event) => {
+    navigate('/create')
+    setShowForm(true); 
   };
 
   return (
@@ -35,7 +41,7 @@ const AddExpense = () => {
           handleSaveClick={handleSaveClick}
         />
       ) : (
-        <button className="Add_Button" onClick={() => setShowForm(true)}>+</button>
+        <button className="Add_Button" onClick={buttonClick}>+</button>
       )}
     </div>
   );

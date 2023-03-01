@@ -3,6 +3,9 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 24px;
+    position: relative;
+    top: 200px;
+    left: 140px;
   }
   
   .searchFilter {
