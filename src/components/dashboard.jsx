@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-// import { DateRangePicker } from 'react-dates';
+// import DatePicker from 'react-datepicker';
 import '../styles/Dashboard.css';
 import AddExpense from './AddExpense';
 
@@ -18,7 +18,7 @@ const Dashboard = () => {
               <option value="amount">Amount</option>
             </select>
             <label htmlFor="date">Filter by date:</label>
-            {/* <DateRangePicker id="date" /> */}
+            {/* <DateRangePicker /> */}
           </div>
         </div>}
       </div>

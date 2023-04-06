@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header';
 
 const Create = ({
   title,
@@ -13,9 +14,9 @@ const Create = ({
 }) => {
   return (
     <div>
+    <Header/>
       <label>Title:</label>
       <input type="text" value={title} onChange={handleTitleChange} />
-
       <label>Amount:</label>
       <input type="text" value={amount} onChange={handleAmountChange} />
 
