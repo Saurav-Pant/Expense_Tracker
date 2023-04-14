@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from './Header';
-// import { DateRangePicker } from 'react-dates';
 import '../styles/Dashboard.css';
 import AddExpense from './AddExpense';
+import UserContext from '../Context/UserContext';
+import UserData from './UserData';
 
 const Dashboard = () => {
   return (
+    <UserContext.Provider value={user}>
     <div>
       <Header />
       <div className="wholeDashboard">
@@ -18,12 +20,13 @@ const Dashboard = () => {
               <option value="amount">Amount</option>
             </select>
             <label htmlFor="date">Filter by date:</label>
-            {/* <DateRangePicker id="date" /> */}
           </div>
         </div>}
       </div>
+      <UserData />
       <AddExpense/>
     </div>
+    </UserContext.Provider>
   );
 };
 
